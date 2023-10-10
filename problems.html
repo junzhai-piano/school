@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem and Solution</title>
+    <style>
+      #solution {
+        display: none; /* Hide the solution by default */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Problem</h1>
+    <p>
+      A palindrome reads the same forwards and backwards. The number 2017102 is
+      a 7-digit palindrome. Let A represent the least palindrome greater than
+      2017102. Let B represent the greatest palindrome less than 2017102. Find A
+      – B.
+    </p>
+
+    <button id="showSolutionButton" onclick="showSolution()">
+      Show Solution
+    </button>
+
+    <div id="solution">
+      <h2>Solution</h2>
+      <p>
+        Here's the solution to the problem: Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+      </p>
+    </div>
+
+    <script>
+      function showSolution() {
+        var solutionDiv = document.getElementById("solution");
+        var button = document.getElementById("showSolutionButton");
+
+        if (solutionDiv.style.display === "none") {
+          solutionDiv.style.display = "block";
+          button.textContent = "Hide Solution";
+        } else {
+          solutionDiv.style.display = "none";
+          button.textContent = "Show Solution";
+        }
+      }
+    </script>
+  </body>
+</html>
